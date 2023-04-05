@@ -156,7 +156,7 @@ function spinnerMostrar()
   };
 
   consultarAPI(ciudad, pais) {
-    const apikey = `674e7c94792bfaf02f09ae8255c24779`;
+    const apikey = ``;
     const url = `https://api.openweathermap.org/data/2.5/weather?q= ${ciudad},${pais}&appid=${apikey}`;
     console.log(url);
     fetch(url)
