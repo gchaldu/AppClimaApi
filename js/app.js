@@ -149,39 +149,3 @@ function spinnerMostrar()
     resultado.appendChild(spinner);
    
 }
-
-/* class Clima {
-
-  constructor(){
-  };
-
-  consultarAPI(ciudad, pais) {
-    const apikey = ``;
-    const url = `https://api.openweathermap.org/data/2.5/weather?q= ${ciudad},${pais}&appid=${apikey}`;
-    console.log(url);
-    fetch(url)
-      .then((respuesta) => {
-        return respuesta.json();
-      })
-      .then((datos) => {
-        if (datos.cod === "404") {
-          GestinarMensaje("La Cuidad NO EXISTE", "error");
-        }
-        console.log(datos);
-      });
-  }
-  buscarClima(e) {
-    e.preventDefault();
-    //validar campos
-    const ciudad = document.querySelector("#ciudad");
-    const pais = document.querySelector("#pais");
-    if (ciudad.value === "" || pais.value === "") {
-      GestinarMensaje("Los campos tienen que estar completos", "error");
-      console.log("vacia");
-      return;
-    }
-    //consultar api
-    this.consultarAPI(ciudad.value, pais.value);
-  }
-}
- */
